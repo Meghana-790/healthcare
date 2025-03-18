@@ -1,4 +1,11 @@
 absl-py==2.1.0
+aiobotocore==2.4.0
+aiohappyeyeballs @ file:///C:/b/abs_b505trsapr/croot/aiohappyeyeballs_1725434036096/work
+aiohttp @ file:///C:/b/abs_13j6efxjb7/croot/aiohttp_1725529348885/work
+aioitertools @ file:///tmp/build/80754af9/aioitertools_1607109665762/work
+aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
+alabaster @ file:///C:/b/abs_45ba4vacaj/croot/alabaster_1718201502252/work
+altair @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/altair_1699497320503/work
 anaconda-anon-usage @ file:///C:/b/abs_c3w_h1zzjg/croot/anaconda-anon-usage_1710965204622/work
 anaconda-catalogs @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/anaconda-catalogs_1701816586117/work
 anaconda-client @ file:///C:/b/abs_34txutm0ue/croot/anaconda-client_1708640705294/work
@@ -31,7 +38,7 @@ bleach @ file:///opt/conda/conda-bld/bleach_1641577558959/work
 blinker @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/blinker_1699474692786/work
 bokeh @ file:///C:/b/abs_b40zi4jp_s/croot/bokeh_1727914495891/work
 boltons @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/boltons_1699480450092/work
-botocore @ file:///C:/b/abs_0dkeqep0ox/croot/botocore_1714460586193/work
+botocore==1.27.59
 Bottleneck @ file:///C:/b/abs_f7un855idq/croot/bottleneck_1709069969633/work
 Brotli @ file:///C:/b/abs_3d36mno480/croot/brotli-split_1714483178642/work
 cachetools @ file:///C:/b/abs_792zbtc0ua/croot/cachetools_1713977157919/work
@@ -302,7 +309,7 @@ seaborn @ file:///C:/b/abs_ca2mi1rgmn/croot/seaborn_1718303534355/work
 semver @ file:///C:/b/abs_4bkbn3v6jp/croot/semver_1709243682483/work
 Send2Trash @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/send2trash_1701806400767/work
 service-identity @ file:///Users/ktietz/demo/mc3/conda-bld/service_identity_1629460757137/work
-setuptools==75.1.0
+setuptools==76.1.0
 sip @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/sip_1699475590677/work
 six @ file:///tmp/build/80754af9/six_1644875935023/work
 smart-open @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/smart_open_1699483216058/work
@@ -359,7 +366,7 @@ uc-micro-py @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/uc-m
 ujson @ file:///C:/b/abs_c93a278xy4/croot/ujson_1717598062082/work
 unicodedata2 @ file:///C:/b/abs_b6apldlg7y/croot/unicodedata2_1713212998255/work
 Unidecode @ file:///C:/b/abs_4cczv71djp/croot/unidecode_1724790062151/work
-urllib3 @ file:///C:/b/abs_9a_f8h_bn2/croot/urllib3_1727769836930/work
+urllib3==1.26.20
 w3lib @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/w3lib_1709162573908/work
 watchdog @ file:///C:/b/abs_b3l_3s276z/croot/watchdog_1717166538403/work
 wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
@@ -367,7 +374,7 @@ webencodings @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/web
 websocket-client @ file:///C:/b/abs_5dmnxxoci9/croot/websocket-client_1715878351319/work
 Werkzeug @ file:///C:/b/abs_8bittcw9jr/croot/werkzeug_1716533366070/work
 whatthepatch @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/whatthepatch_1699497134590/work
-wheel==0.44.0
+wheel==0.45.1
 widgetsnbextension @ file:///C:/b/abs_538o2crz7f/croot/widgetsnbextension_1710960099872/work
 win-inet-pton @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/win_inet_pton_1699472992992/work
 wrapt @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/wrapt_1699480231633/work

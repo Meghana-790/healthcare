@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointments</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Healthcare Appointment Booking</h1>
+      <div style="padding: 5px">
+        <a href="/logout" class="logout">Logout</a>
+      </div>
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %}
+      <ul class="messages">
+        {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% endwith %}
+      <form action="/insert" method="POST">
+        <input
+          type="text"
+          name="patient_name"
+          placeholder="Patient Name"
+          required
+        />
+        <input type="number" name="phone" placeholder="Phone" required />
+        <input type="text" name="email" placeholder="Email" required />
+        <input type="number" name="age" placeholder="Age" required />
+        <input type="text" name="gender" placeholder="Gender" required />
+        <input type="text" name="diabetes" placeholder="Diabetes" required />
+        <input type="date" name="appointment_date" required />
+        <textarea name="description" placeholder="Description"></textarea>
+
+        <button type="submit">Add Appointment</button>
+      </form>
+      <!-- <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Patient</th>
+            <th>phone</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for appointment in appointments %}
+          <tr>
+            <td>{{ appointment[0] }}</td>
+            <td>{{ appointment[1] }}</td>
+            <td>{{ appointment[2] }}</td>
+            <td>{{ appointment[3] }}</td>
+            <td>{{ appointment[4] }}</td>
+            <td>
+              <form action="/update" method="POST" style="display: inline">
+                <input type="hidden" name="id" value="{{ appointment[0] }}" />
+                <input
+                  type="text"
+                  name="patient_name"
+                  value="{{ appointment[1] }}"
+                  required
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  value="{{ appointment[2] }}"
+                  required
+                />
+                <input
+                  type="date"
+                  name="appointment_date"
+                  value="{{ appointment[3] }}"
+                  required
+                />
+                <textarea name="description">{{ appointment[4] }}</textarea>
+                <button type="submit">Update</button>
+              </form>
+              <a href="/delete/{{ appointment[0] }}">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table> -->
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Patient</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>DIABETES</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for appointment in appointments %}
+          <tr>
+            <td>{{ appointment[0] }}</td>
+            <td>{{ appointment[1] }}</td>
+            <td>{{ appointment[2] }}</td>
+            <td>{{ appointment[5] }}</td>
+            <td>{{ appointment[6] }}</td>
+            <td>{{ appointment[7] }}</td>
+            <td>{{ appointment[8] }}</td>
+            <td>{{ appointment[3] }}</td>
+            <td>{{ appointment[4] }}</td>
+            <td>
+              <form action="/update" method="POST" style="display: inline">
+                <input type="hidden" name="id" value="{{ appointment[0] }}" />
+                <input
+                  type="text"
+                  name="patient_name"
+                  value="{{ appointment[1] }}"
+                  required
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  value="{{ appointment[2] }}"
+                  required
+                />
+                <input
+                  type="text"
+                  name="email"
+                  value="{{ appointment[5] }}"
+                  required
+                />
+                <input
+                  type="text"
+                  name="age"
+                  value="{{ appointment[6] }}"
+                  required
+                />
+                <input
+                  type="text"
+                  name="gender"
+                  value="{{ appointment[7] }}"
+                  required
+                />
+                <input
+                  type="text"
+                  name="diabetes"
+                  value="{{ appointment[8] }}"
+                  required
+                />
+                <input
+                  type="date"
+                  name="appointment_date"
+                  value="{{ appointment[3] }}"
+                  required
+                />
+                <textarea name="description">{{ appointment[4] }}</textarea>
+
+                <button type="submit">Update</button>
+              </form>
+              <a href="/delete/{{ appointment[0] }}" class="delete">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
